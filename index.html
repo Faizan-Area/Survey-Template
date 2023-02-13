@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <img src="images/hand-writing.jpg" alt="Survey">
+            <div>
+                <h1>Question list</h1>
+                <span class="number">12</span>
+            </div>
+        </div>
+        <p class="para">These are the questions corresponding to COVID-19</p>
+        <div class="view" id="preview"
+            onclick="document.getElementById('preview').style.display='none'; document.getElementById('unPreview').style.display='flex'; document.getElementById('mainContainer').style.display='block';">
+            <img src="images/view.png" class="eye">
+            <p>Preview Questions</p>
+        </div>
+        <div class="view" id="unPreview"
+            onclick="document.getElementById('unPreview').style.display='none'; document.getElementById('preview').style.display='flex'; document.getElementById('mainContainer').style.display='none';">
+            <img src="images/hidden.png" class="eye">
+            <p>Unpreview Questions</p>
+        </div>
+    </header>
+
+    <main id="container">
+        <!-- Left Container -->
+        <section id="leftContainer">
+            <div class="leftItems">
+                <img src="images/wrench.png">
+                <p id="1">Campaign Setup</p>
+            </div>
+            <div class="leftItems">
+                <img src="images/question-sign.png">
+                <p id="2">Questions List</p>
+            </div>
+            <div class="leftItems">
+                <img src="images/clock.png">
+                <p id="3">Timeline</p>
+            </div>
+        </section>
+
+        <!-- Main Conatiner -->
+        <section id="mainContainer">
+            <div class="subContainer manager" id="subContainer1">
+                <div class="head">
+                    <span>Asked to: Manager</span>
+                    <span>Text Answer</span>
+                </div>
+                <div class="body">
+                    <span>1</span>
+                    <p>Do you find yourself struggling more than usual with the current COVID-19 situation?</p>
+                </div>
+            </div>
+            <div class="subContainer reviewee" id="subContainer2">
+                <div class="head">
+                    <span>Asked to: Reviewee</span>
+                    <span>Text Answer</span>
+                </div>
+                <div class="body">
+                    <span>2</span>
+                    <p>Are you having difficulties in terms of workload? Can you explain how you deal with the different
+                        projects?</p>
+                </div>
+            </div>
+            <div class="subContainer manager" id="subContainer3">
+                <div class="head">
+                    <span>Asked to: Manager</span>
+                    <span>Text Answer</span>
+                </div>
+                <div class="body">
+                    <span>3</span>
+                    <p>Based on your previous answer, would you say that you are still empowered by the company vision?
+                    </p>
+                </div>
+            </div>
+            <div class="subContainer reviewee" id="subContainer4">
+                <div class="head">
+                    <span>Asked to: Reviewee</span>
+                    <span>Text Answer</span>
+                </div>
+                <div class="body">
+                    <span>4</span>
+                    <p>Will Miracle Mineral Solution(MMS) cure COVID-19?</p>
+                </div>
+            </div>
+            <div class="subContainer reviewee" id="subContainer5">
+                <div class="head">
+                    <span>Asked to: Reviewee</span>
+                    <span>Multiple Choice</span>
+                </div>
+                <div class="body">
+                    <span>5</span>
+                    <p>What treatment are available in the U.S. to treat COVID-19?</p>
+                </div>
+            </div>
+            <div class="subContainer reviewee" id="subContainer6">
+                <div class="head">
+                    <span>Asked to: Reviewee</span>
+                    <span>Text Answer</span>
+                </div>
+                <div class="body">
+                    <span>6</span>
+                    <p>How can I prevent COVID-19?</p>
+                </div>
+            </div>
+            <div class="subContainer reviewee" id="subContainer7">
+                <div class="head">
+                    <span>Asked to: Reviewee</span>
+                    <span>Text Answer</span>
+                </div>
+                <div class="body">
+                    <span>7</span>
+                    <p>What is an emergency use authorization and how is it being used to respond to COVID-19?</p>
+                </div>
+            </div>
+            <div class="subContainer manager" id="subContainer8">
+                <div class="head">
+                    <span>Asked to: Manager</span>
+                    <span>Multiple Choice</span>
+                </div>
+                <div class="body">
+                    <span>8</span>
+                    <p>What is the FDA doing to respond to the COVID-19 pandemic?</p>
+                </div>
+            </div>
+            <div class="subContainer reviewee" id="subContainer9">
+                <div class="head">
+                    <span>Asked to: Reviewee</span>
+                    <span>Text Answer</span>
+                </div>
+                <div class="body">
+                    <span>9</span>
+                    <p>What should I do with hand sanitizer on the FDA's list of hand sanitizers that consumers should
+                        not use?</p>
+                </div>
+            </div>
+            <div class="subContainer manager" id="subContainer10">
+                <div class="head">
+                    <span>Asked to: Manager</span>
+                    <span>Multiple Choice</span>
+                </div>
+                <div class="body">
+                    <span>10</span>
+                    <p>What is the risk of using a hand sanitizer that contains methanol(wood alcohol) or 1-propanol?
+                    </p>
+                </div>
+            </div>
+            <div class="subContainer manager" id="subContainer11">
+                <div class="head">
+                    <span>Asked to: Manager</span>
+                    <span>Text Answer</span>
+                </div>
+                <div class="body">
+                    <span>11</span>
+                    <p>If I vape tobacco or nicotine am I at risk for complications from COVID-19?</p>
+                </div>
+            </div>
+            <div class="subContainer reviewee" id="subContainer12">
+                <div class="head">
+                    <span>Asked to: Reviewee</span>
+                    <span>Multiple Choice</span>
+                </div>
+                <div class="body">
+                    <span>12</span>
+                    <p>Am I at risk for serious complications from COVID-19 if I smoke cigrattes?</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Conatiner -->
+        <section id="rightContainer">
+            <h4>See question list of: <img src="images/question-sign.png"></h4>
+            <div class="selecter">
+                <label for="everyone"><input type="radio" name="radio" id="everyone" checked> Everyone</label>
+                <label for="reviewee" onclick="document.querySelectorAll('manager').style.display='none'"><input
+                        type="radio" name="radio" id="reviewee"> Reviewee <span>(7)</span></label>
+                <label for="manager" onclick="document.querySelectorAll('reviewee').style.display='none'"><input
+                        type="radio" name="radio" id="manager"> Manager <span>(5)</span></label>
+            </div>
+            <div class="card">
+                <h4>Amandine, HR PayFit</h4>
+                <p>We recommended to have no more than <strong>10 Questions</strong> mixed between opend and closed
+                    question to allow the
+                    participants to better reflect on they achieved.</p>
+                <p>Currently the <strong>Reviewee</strong> answer to <span class="number">7</span> questions and the
+                    <strong>Manager</strong> to <span class="number">5</span> questions.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
