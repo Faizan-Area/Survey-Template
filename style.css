@@ -180,6 +180,10 @@ header {
     padding: 10px;
 }
 
+.selector label {
+    color: grey;
+}
+
 .card{
     padding: 20px;
     border-radius: 10px;
