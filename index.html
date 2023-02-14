@@ -52,28 +52,66 @@
         <section id="mainContainer">
             <div class="subContainer manager" id="subContainer1">
                 <div class="head">
-                    <span>Asked to: Manager</span>
-                    <span>Text Answer</span>
+                    <img src="images/up-chevron.png"
+                        onclick="document.querySelector('#ans1').style.display='none'; document.querySelector('#down-chevron1').style.display='flex'; document.querySelector('#up-chevron1').style.display='none'"
+                        class="up-chevron" id="up-chevron1">
+                    <img src="images/down-chevron.png"
+                        onclick="document.querySelector('#ans1').style.display='flex'; document.querySelector('#down-chevron1').style.display='none'; document.querySelector('#up-chevron1').style.display='flex'"
+                        id="down-chevron1">
+                    <span class="asked">Asked to: Manager</span>
+                    <span>Yes or No</span>
                 </div>
                 <div class="body">
                     <span>1</span>
                     <p>Do you find yourself struggling more than usual with the current COVID-19 situation?</p>
                 </div>
+                <div id="ans1" class="ans">
+                    <form action="#">
+                        <div id="yes1" class="yes"
+                            onclick="document.querySelector('#yes1').style.color= 'white'; document.querySelector('#yes1').style.background= 'rgb(77, 169, 255)'; document.querySelector('#yes1').style.border= 'none';document.querySelector('#no1').style.color= 'grey'; document.querySelector('#no1').style.background= 'white'; document.querySelector('#no1').style.border= '1px solid grey'">
+                            Yes</div>
+                        <div id="no1" class="no"
+                            onclick="document.querySelector('#no1').style.color= 'white'; document.querySelector('#no1').style.background= 'rgb(77, 169, 255)'; document.querySelector('#no1').style.border= 'none';document.querySelector('#yes1').style.color= 'grey'; document.querySelector('#yes1').style.background= 'white'; document.querySelector('#yes1').style.border= '1px solid grey'">
+                            No</div>
+                    </form>
+                </div>
             </div>
             <div class="subContainer reviewee" id="subContainer2">
                 <div class="head">
-                    <span>Asked to: Reviewee</span>
-                    <span>Text Answer</span>
+                    <img src="images/up-chevron.png"
+                        onclick="document.querySelector('#ans2').style.display='none'; document.querySelector('#down-chevron2').style.display='flex'; document.querySelector('#up-chevron2').style.display='none'"
+                        class="up-chevron" id="up-chevron2">
+                    <img src="images/down-chevron.png"
+                        onclick="document.querySelector('#ans2').style.display='flex'; document.querySelector('#down-chevron2').style.display='none'; document.querySelector('#up-chevron2').style.display='flex'"
+                        id="down-chevron2">
+                    <span class="asked">Asked to: Reviewee</span>
+                    <span>Yes or No</span>
                 </div>
                 <div class="body">
                     <span>2</span>
                     <p>Are you having difficulties in terms of workload? Can you explain how you deal with the different
                         projects?</p>
                 </div>
+                <div id="ans2" class="ans">
+                    <form action="#">
+                        <div id="yes2" class="yes"
+                            onclick="document.querySelector('#yes2').style.color= 'white'; document.querySelector('#yes2').style.background= 'rgb(77, 169, 255)'; document.querySelector('#yes2').style.border= 'none';document.querySelector('#no2').style.color= 'grey'; document.querySelector('#no2').style.background= 'white'; document.querySelector('#no2').style.border= '1px solid grey'">
+                            Yes</div>
+                        <div id="no2" class="no"
+                            onclick="document.querySelector('#no2').style.color= 'white'; document.querySelector('#no2').style.background= 'rgb(77, 169, 255)'; document.querySelector('#no2').style.border= 'none';document.querySelector('#yes2').style.color= 'grey'; document.querySelector('#yes2').style.background= 'white'; document.querySelector('#yes2').style.border= '1px solid grey'">
+                            No</div>
+                    </form>
+                </div>
             </div>
             <div class="subContainer manager" id="subContainer3">
                 <div class="head">
-                    <span>Asked to: Manager</span>
+                    <img src="images/up-chevron.png"
+                        onclick="document.querySelector('#ans3').style.display='none'; document.querySelector('#down-chevron3').style.display='flex'; document.querySelector('#up-chevron3').style.display='none'"
+                        class="up-chevron" id="up-chevron3">
+                    <img src="images/down-chevron.png"
+                        onclick="document.querySelector('#ans3').style.display='flex'; document.querySelector('#down-chevron3').style.display='none'; document.querySelector('#up-chevron3').style.display='flex'"
+                        id="down-chevron3">
+                    <span class="asked">Asked to: Manager</span>
                     <span>Text Answer</span>
                 </div>
                 <div class="body">
@@ -81,60 +119,120 @@
                     <p>Based on your previous answer, would you say that you are still empowered by the company vision?
                     </p>
                 </div>
+                <div id="ans3" class="ans">
+                    <textarea name="answer" class="area"></textarea>
+                    <button>Submit</button>
+                </div>
             </div>
             <div class="subContainer reviewee" id="subContainer4">
                 <div class="head">
-                    <span>Asked to: Reviewee</span>
-                    <span>Text Answer</span>
+                    <img src="images/up-chevron.png"
+                        onclick="document.querySelector('#ans4').style.display='none'; document.querySelector('#down-chevron4').style.display='flex'; document.querySelector('#up-chevron4').style.display='none'"
+                        class="up-chevron" id="up-chevron4">
+                    <img src="images/down-chevron.png"
+                        onclick="document.querySelector('#ans4').style.display='flex'; document.querySelector('#down-chevron4').style.display='none'; document.querySelector('#up-chevron4').style.display='flex'"
+                        id="down-chevron4">
+                    <span class="asked">Asked to: Reviewee</span>
+                    <span>Multiple Choice</span>
                 </div>
                 <div class="body">
                     <span>4</span>
                     <p>Will Miracle Mineral Solution(MMS) cure COVID-19?</p>
                 </div>
+                <div id="ans4" class="ans">
+                    <label for="Lorem"><input id="Lorem" class="checkbox" type="checkbox"> Lorem</label>
+                    <label for="dolor"><input id="dolor" class="checkbox" type="checkbox"> Ipsum</label>
+                    <label for="Useless Answer"><input id="Useless Answer" class="checkbox" type="checkbox"> Useless
+                        Answer</label>
+                    <label for="undefined"><input id="undefined" class="checkbox" type="checkbox"> Undefined</label>
+                    <button>Submit</button>
+                </div>
             </div>
             <div class="subContainer reviewee" id="subContainer5">
                 <div class="head">
-                    <span>Asked to: Reviewee</span>
+                    <img src="images/up-chevron.png"
+                        onclick="document.querySelector('#ans5').style.display='none'; document.querySelector('#down-chevron5').style.display='flex'; document.querySelector('#up-chevron5').style.display='none'"
+                        class="up-chevron" id="up-chevron5">
+                    <img src="images/down-chevron.png"
+                        onclick="document.querySelector('#ans5').style.display='flex'; document.querySelector('#down-chevron5').style.display='none'; document.querySelector('#up-chevron5').style.display='flex'"
+                        id="down-chevron5">
+                    <span class="asked">Asked to: Reviewee</span>
                     <span>Multiple Choice</span>
                 </div>
                 <div class="body">
                     <span>5</span>
                     <p>What treatment are available in the U.S. to treat COVID-19?</p>
                 </div>
+                <div id="ans5" class="ans">
+
+                </div>
             </div>
             <div class="subContainer reviewee" id="subContainer6">
                 <div class="head">
-                    <span>Asked to: Reviewee</span>
+                    <img src="images/up-chevron.png"
+                        onclick="document.querySelector('#ans6').style.display='none'; document.querySelector('#down-chevron6').style.display='flex'; document.querySelector('#up-chevron6').style.display='none'"
+                        class="up-chevron" id="up-chevron6">
+                    <img src="images/down-chevron.png"
+                        onclick="document.querySelector('#ans6').style.display='flex'; document.querySelector('#down-chevron6').style.display='none'; document.querySelector('#up-chevron6').style.display='flex'"
+                        id="down-chevron6">
+                    <span class="asked">Asked to: Reviewee</span>
                     <span>Text Answer</span>
                 </div>
                 <div class="body">
                     <span>6</span>
                     <p>How can I prevent COVID-19?</p>
                 </div>
+                <div id="ans6" class="ans">
+
+                </div>
             </div>
             <div class="subContainer reviewee" id="subContainer7">
                 <div class="head">
-                    <span>Asked to: Reviewee</span>
+                    <img src="images/up-chevron.png"
+                        onclick="document.querySelector('#ans7').style.display='none'; document.querySelector('#down-chevron7').style.display='flex'; document.querySelector('#up-chevron7').style.display='none'"
+                        class="up-chevron" id="up-chevron7">
+                    <img src="images/down-chevron.png"
+                        onclick="document.querySelector('#ans7').style.display='flex'; document.querySelector('#down-chevron7').style.display='none'; document.querySelector('#up-chevron7').style.display='flex'"
+                        id="down-chevron7">
+                    <span class="asked">Asked to: Reviewee</span>
                     <span>Text Answer</span>
                 </div>
                 <div class="body">
                     <span>7</span>
                     <p>What is an emergency use authorization and how is it being used to respond to COVID-19?</p>
                 </div>
+                <div id="ans7" class="ans">
+
+                </div>
             </div>
             <div class="subContainer manager" id="subContainer8">
                 <div class="head">
-                    <span>Asked to: Manager</span>
+                    <img src="images/up-chevron.png"
+                        onclick="document.querySelector('#ans8').style.display='none'; document.querySelector('#down-chevron8').style.display='flex'; document.querySelector('#up-chevron8').style.display='none'"
+                        class="up-chevron" id="up-chevron8">
+                    <img src="images/down-chevron.png"
+                        onclick="document.querySelector('#ans8').style.display='flex'; document.querySelector('#down-chevron8').style.display='none'; document.querySelector('#up-chevron8').style.display='flex'"
+                        id="down-chevron8">
+                    <span class="asked">Asked to: Manager</span>
                     <span>Multiple Choice</span>
                 </div>
                 <div class="body">
                     <span>8</span>
                     <p>What is the FDA doing to respond to the COVID-19 pandemic?</p>
                 </div>
+                <div id="ans8" class="ans">
+
+                </div>
             </div>
             <div class="subContainer reviewee" id="subContainer9">
                 <div class="head">
-                    <span>Asked to: Reviewee</span>
+                    <img src="images/up-chevron.png"
+                        onclick="document.querySelector('#ans9').style.display='none'; document.querySelector('#down-chevron9').style.display='flex'; document.querySelector('#up-chevron9').style.display='none'"
+                        class="up-chevron" id="up-chevron9">
+                    <img src="images/down-chevron.png"
+                        onclick="document.querySelector('#ans9').style.display='flex'; document.querySelector('#down-chevron9').style.display='none'; document.querySelector('#up-chevron9').style.display='flex'"
+                        id="down-chevron9">
+                    <span class="asked">Asked to: Reviewee</span>
                     <span>Text Answer</span>
                 </div>
                 <div class="body">
@@ -142,10 +240,19 @@
                     <p>What should I do with hand sanitizer on the FDA's list of hand sanitizers that consumers should
                         not use?</p>
                 </div>
+                <div id="ans9" class="ans">
+
+                </div>
             </div>
             <div class="subContainer manager" id="subContainer10">
                 <div class="head">
-                    <span>Asked to: Manager</span>
+                    <img src="images/up-chevron.png"
+                        onclick="document.querySelector('#ans10').style.display='none'; document.querySelector('#down-chevron10').style.display='flex'; document.querySelector('#up-chevron10').style.display='none'"
+                        class="up-chevron" id="up-chevron10">
+                    <img src="images/down-chevron.png"
+                        onclick="document.querySelector('#ans10').style.display='flex'; document.querySelector('#down-chevron10').style.display='none'; document.querySelector('#up-chevron10').style.display='flex'"
+                        id="down-chevron10">
+                    <span class="asked">Asked to: Manager</span>
                     <span>Multiple Choice</span>
                 </div>
                 <div class="body">
@@ -153,25 +260,46 @@
                     <p>What is the risk of using a hand sanitizer that contains methanol(wood alcohol) or 1-propanol?
                     </p>
                 </div>
+                <div id="ans10" class="ans">
+
+                </div>
             </div>
             <div class="subContainer manager" id="subContainer11">
                 <div class="head">
-                    <span>Asked to: Manager</span>
+                    <img src="images/up-chevron.png"
+                        onclick="document.querySelector('#ans11').style.display='none'; document.querySelector('#down-chevron11').style.display='flex'; document.querySelector('#up-chevron11').style.display='none'"
+                        class="up-chevron" id="up-chevron11">
+                    <img src="images/down-chevron.png"
+                        onclick="document.querySelector('#ans11').style.display='flex'; document.querySelector('#down-chevron11').style.display='none'; document.querySelector('#up-chevron11').style.display='flex'"
+                        id="down-chevron11">
+                    <span class="asked">Asked to: Manager</span>
                     <span>Text Answer</span>
                 </div>
                 <div class="body">
                     <span>11</span>
                     <p>If I vape tobacco or nicotine am I at risk for complications from COVID-19?</p>
                 </div>
+                <div id="ans11" class="ans">
+
+                </div>
             </div>
             <div class="subContainer reviewee" id="subContainer12">
                 <div class="head">
-                    <span>Asked to: Reviewee</span>
+                    <img src="images/up-chevron.png"
+                        onclick="document.querySelector('#ans12').style.display='none'; document.querySelector('#down-chevron12').style.display='flex'; document.querySelector('#up-chevron12').style.display='none'"
+                        class="up-chevron" id="up-chevron12">
+                    <img src="images/down-chevron.png"
+                        onclick="document.querySelector('#ans12').style.display='flex'; document.querySelector('#down-chevron12').style.display='none'; document.querySelector('#up-chevron12').style.display='flex'"
+                        id="down-chevron12">
+                    <span class="asked">Asked to: Reviewee</span>
                     <span>Multiple Choice</span>
                 </div>
                 <div class="body">
                     <span>12</span>
                     <p>Am I at risk for serious complications from COVID-19 if I smoke cigrattes?</p>
+                </div>
+                <div id="ans12" class="ans">
+
                 </div>
             </div>
         </section>
