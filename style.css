@@ -73,7 +73,7 @@ header {
 
 /* Conatiner */
 
-#container{
+#container {
     padding: 50px 2%;
     display: flex;
     justify-content: space-between;
@@ -82,7 +82,7 @@ header {
 
 /* Left Container */
 
-#leftContainer{
+#leftContainer {
     width: 15%;
 
 }
@@ -97,7 +97,7 @@ header {
     padding-left: 10px;
 }
 
-.leftItems img{
+.leftItems img {
     width: 15px;
 }
 
@@ -108,20 +108,22 @@ header {
     color: grey;
     list-style: none;
 }
-.leftItems:nth-child(2){
+
+.leftItems:nth-child(2) {
     background: rgba(77, 169, 255, 0.15);
 }
-.leftItems:nth-child(2) p{
+
+.leftItems:nth-child(2) p {
     color: rgb(77, 169, 255);
 }
 
 /* Main Container */
 
-#mainContainer{
+#mainContainer {
     width: 60%;
 }
 
-.subContainer{
+.subContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,13 +142,14 @@ header {
     margin-bottom: 20px;
 }
 
-.body{
+.body {
     display: flex;
     align-items: start;
     justify-content: center;
 }
 
-.body span{
+
+.body span {
     color: white;
     border-radius: 50px;
     margin-top: -5px;
@@ -159,9 +162,79 @@ header {
     font-weight: bold;
 }
 
+.head img {
+    width: 15px;
+    margin-right: 5px;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.head .asked {
+    flex-grow: 1;
+}
+
+.ans {
+    display: none;
+}
+
+#ans3 {
+    flex-direction: column;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px 20px;
+    width: 100px;
+    border-radius: 8px;
+    background: rgb(116, 252, 116);
+    border: none;
+    cursor: pointer;
+}
+
+button:active {
+    background: rgb(77, 169, 255);
+}
+
+button:focus {
+    background: rgb(77, 169, 255);
+}
+
+.up-chevron {
+    display: none;
+}
+
+.area {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    width: 60em;
+    height: 10em;
+}
+
+.yes,
+.no {
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: 1px solid grey;
+    color: grey;
+}
+
+#ans4 {
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
 /* Right Container */
 
-#rightContainer{
+#rightContainer {
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -176,15 +249,17 @@ header {
     padding-bottom: 1px;
 }
 
-.selector label span{
+.selector label span {
     padding: 10px;
 }
 
-.selector label {
+label,
+input {
+    cursor: pointer;
     color: grey;
 }
 
-.card{
+.card {
     padding: 20px;
     border-radius: 10px;
     margin: 20px 0;
@@ -198,16 +273,16 @@ header {
 /* Media Qurey */
 
 @media (max-width: 1580px) {
-    #leftContainer{
+    #leftContainer {
         display: none;
     }
 
-    #mainContainer{
+    #mainContainer {
         width: 80%;
     }
 
-    #rightContainer{
+    #rightContainer {
         width: 20%;
     }
-    
+
 }
